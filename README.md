@@ -18,7 +18,7 @@ Your project folder now contains a folder named `db` which stores the actual dat
 
 You can visit [the official MongoDB Compass page](https://www.mongodb.com/try/download/compass) to download and install MongoDB Compass on your computer.
 
-Once you've opened the MongoDB Compass, you can use the following connection string to connect to our API's database:
+Once you've opened the MongoDB Compass app, you can use the following connection string to connect to our API's database:
 
 `mongodb://root:root@localhost:27017/`
 
