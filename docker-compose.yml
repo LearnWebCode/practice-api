@@ -1,0 +1,26 @@
+version: "3.9"
+services:
+  node:
+    container_name: react-backend-node
+    image: learnwebcode/react-backend-node:latest
+    restart: always
+    user: "node"
+    working_dir: /home/node/app
+    environment:
+      - NODE_ENV=production
+    ports:
+      - 8080:8080
+    command: "npm start"
+    depends_on:
+      - mongo
+  mongo:
+    container_name: "react-backend-mongo"
+    image: mongo:5.0.1-focal
+    restart: always
+    ports:
+      - 27017:27017
+    volumes:
+      - ./db:/data/db
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: root
