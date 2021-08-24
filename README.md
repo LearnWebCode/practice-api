@@ -12,6 +12,12 @@ From now on, whenever you want to stop the app you can run `docker compose stop`
 
 You can now visit `http://localhost:8080/` in a browser and should see a "Hello" message. Look further down on this page for information about all API Endpoints / URLs.
 
+# Easiest Way To Send Practice Requests
+
+Eventually you'll want to program your requests within your own application, but while you're practicing or debugging it is nice to have a GUI app for sending requests.
+
+While Postman is popular, I strongly prefer using [Insomnia](https://insomnia.rest/download) instead. Insomnia is free to use for Windows, Mac, and Linux.
+
 # Viewing The Database Directly
 
 Your project folder now contains a folder named `db` which stores the actual database data.
